@@ -1,0 +1,116 @@
+BC Subtree Copy Retain Sections extension INSTALL
+
+Introduction
+============
+
+1. What is the BC Subtree Copy Retain Sections extension?
+   ------------------------------------------------
+
+   BC Subtree Copy Retain Sections is a true eZ Publish extension that
+   provides command line script to copy content tree node object subtrees
+   while retaining existing sections by providing a retain-sections parameter.
+   When used the copied objects retain the existing section assingments in eZ Publish.
+
+   For more information about this extension please read the doc/README file.
+
+1. License
+   -------
+
+   BC Subtree Copy Retain Sections is licensed under the GNU General Public License.
+
+   The GNU GPL gives you the right to use, modify and redistribute
+   BC Subtree Copy Retain Sections under certain conditions. The GNU GPL license
+   is distributed with the software, see the file doc/LICENSE.
+   It is also available at http://www.gnu.org/licenses/gpl.txt
+
+   Using BC Subtree Copy Retain Sections under the terms of the GNU GPL is free (as in freedom).
+
+   For more information or questions please contact
+   license@brookinsconsulting.com
+
+2. Requirements
+   ------------
+
+   The following requirements exists for using BC Subtree Copy Retain Sections extension:
+
+   o  eZ Publish version:
+
+      Make sure you use eZ Publish version 4.x or higher.
+
+      eZ Publish 2011.11 (4.6+) is recommended.
+
+   o  PHP version:
+
+      Make sure you have PHP 5.x or higher.
+
+
+Getting eZ Publish
+==================
+
+You can download a version of eZ Publish from share.ez.no,
+you will find the various versions at:
+
+http://share.ez.no/download
+
+NOTE: You will only require eZ Publish 4.x or higher (if you have a more recent version)
+
+Information on the installation of eZ Publish can be found at:
+http://doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation
+and
+http://doc.ez.no
+http://share.ez.no
+
+
+Installing BC Subtree Copy Retain Sections extension
+==============================================
+
+1. Copy the package into the `extension' directory
+   in the root of your eZ Publish installation.
+
+2. Unpack the files in the distribution. The command
+   necessary is depends on the file you downloaded.
+   [tar.gz]:
+   $ tar -zxvf bcsubtreecopyretainsections-0_0_4.tar.gz
+   [zip]:
+   $ unzip bcsubtreecopyretainsections-0_0_4.tar.zip
+
+3. No further actions needed. Simply run scripts as needed
+
+
+Usage
+==============================
+
+The copy subtree (and) retain section assignments command line script: ./extension/bcsubtreecopyretainsections/bin/php/bcsubtreecopyretainsections.php
+
+This script will remove the node subtrees within the range specified by required parameters
+'--range-start-node-id' and 'range-end-node-id' which are to be specified by script user to indicate the range of nodes to remove.
+
+cd /path/to/ezpublish/;
+
+Use --help option to review available command line options:
+
+./extension/bcsubtreecopyretainsections/bin/php/bcsubtreecopyretainsections.php --siteaccess ezwebin_site_user --help
+
+
+Primary Example Usage:
+
+In this example the parameter --retain-sections is used as it is disabled by default and section assignments will not be retained (at all) if the parameter is not provided:
+ 
+./extension/bcsubtreecopyretainsections/bin/php/bcsubtreecopyretainsections.php --siteaccess ezwebin_site_user --src-node-id=106 --dst-node-id=2 --retain-sections
+
+
+Troubleshooting
+===============
+
+1. Read the FAQ
+   ------------
+
+   Some problems are more common than others. The most common ones are listed
+   in the the doc/FAQ.
+
+2. Support
+   -------
+
+   If you have find any problems not handled by this document or the FAQ you
+   can contact Brookins Consulting trough the support system:
+   http://brookinsconsulting.com/contact

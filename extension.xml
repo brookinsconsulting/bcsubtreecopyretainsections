@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>BC Subtree Copy Retain Sections</name>
+        <version>//autogentag//</version>
+        <copyright>Copyright (C) 1999 - 2011 eZ Systems AS and &lt;a href='http://brookinsconsulting.com'&gt;Brookins Consulting&lt;/a&gt;</copyright>
+        <license>GNU General Public License</license>
+        <info_url>http://projects.ez.no/bcsubtreecopyretainsections</info_url>
+    </metadata>
+    <dependencies>
+    </dependencies>
+</software>
