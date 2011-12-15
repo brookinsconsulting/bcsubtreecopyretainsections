@@ -4,15 +4,11 @@ What is the BC Subtree Copy Retain Sections extension?
 ================================
 
 BC Subtree Copy Retain Sections is a true eZ Publish extension
-that provides command line script to remove content tree
-node subtrees by providing a range start and end parameter
-of NodeIDs. The nodes which exist will be removed from eZ Publish.
-
-
-BC Subtree Copy Retain Sections is a true eZ Publish extension
 that provides command line script to copy content tree node object
 subtrees while optionally retaining existing sections by providing
 a --retain-sections parameter. 
+
+This is a feature which is not available at all in the default ezsubtreecopy script provided with eZ Publish.
 
 When used the copied objects retain the existing section assingments in eZ Publish.
 
