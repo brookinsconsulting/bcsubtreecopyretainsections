@@ -103,7 +103,9 @@ $commandlineOptionsPost = $allVersionsCommandlineOption . $keepCreatorCommandlin
 $sourceNodeList    = array();
 $syncNodeIDListSrc = array();
 
-$sourceNodeList = eZContentObjectTreeNode::subTreeByNodeID( false, $srcNodeID );
+$subtreeParams = array( 'Depth' => 1, 'IgnoreVisibility' => true );
+
+$sourceNodeList = eZContentObjectTreeNode::subTreeByNodeID( $subtreeParams, $srcNodeID );
 $countNodeList = count( $sourceNodeList );
 
 // Prepare list of source node IDs. We will need it in the future
